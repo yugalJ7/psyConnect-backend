@@ -35,7 +35,7 @@ app.use(helmet());
 app.use(morgan("common"));
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
-app.use("/api/post", postRoutes);
+app.use("/api/posts", postRoutes);
 //created a server which runs on port no. 8800
 app.listen(8800, () => {
   console.log("Backend Server is running!!!-_-");
